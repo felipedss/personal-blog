@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9533a492-ffd1-4679-b202-7dd2bed70ae6/deploy-status)](https://app.netlify.com/sites/aquamarine-valkyrie-b3c248/deploys)
+
 # Astro Boilerplate with TypeScript and Tailwind CSS [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 🚀 Astro Boilerplate is starter code for your blog or portfolio based on Astro
