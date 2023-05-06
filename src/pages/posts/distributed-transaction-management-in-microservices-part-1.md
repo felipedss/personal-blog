@@ -22,7 +22,7 @@ Em um aplicativo monolítico tradicional, haverá um único aplicativo grande co
 
 O limite da transação começa dentro da camada de serviço e pode ser confirmado ou revertido com base no resultado de todas as etapas dessa transação. 
 
-No caso de microsserviços, cada microsserviço executa uma área de negócios específica e mantém o princípio do repositório único (SRP), o que significa que cada microsserviço mantém seu próprio banco de dados. Portanto, as transações são distribuídas pelos microsserviços.
+No caso de microsserviços, cada microsserviço executa uma área de negócios específica e mantém o princípio da resposabilidade única (SRP), o que significa que cada microsserviço mantém seu próprio banco de dados. Portanto, as transações são distribuídas.
 
 **Exemplo: vamos considerar um processamento de pedido online para a Arquitetura Monolitica e de Microservices para o cenário abaixo**
 
@@ -47,7 +47,7 @@ No caso de um aplicativo de microsserviço, cada uma das etapas acima ocorre ind
 
 Como cada uma das etapas é executada dentro de um microsserviço diferente e seu banco de dados, manter o princípio ACID para toda a transação é extremamente difícil e complicado.
 
-Caso contrário, existem alguns padrões padrão para o gerenciamento de transações distribuídas
+**Porém**, existem alguns padrões padrão para o gerenciamento de transações distribuídas
 
 ## Pattern para gerenciamento de transações distribuídas
 
@@ -63,7 +63,7 @@ Caso contrário, existem alguns padrões padrão para o gerenciamento de transa�
 ### Synchronous Patterns
 
 #### Two-Phase Commit (2 PC)
-É um protocolo padrão para lidar com transações distribuídas usando 2 estágios, ou seja, o estágio **Prepare** e o estágio ***Commit**. Existe um componente coordenador de transações que coordena toda a transação conversando com todos os serviços.
+É um protocolo padrão para lidar com transações distribuídas usando 2 estágios, ou seja, o estágio **Prepare** e o estágio **Commit**. Existe um componente coordenador de transações com todos os serviços.
 
 ![alt text for screen readers](../../../public/assets/images/two-phase-commit.png)
 
